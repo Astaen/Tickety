@@ -1,0 +1,178 @@
+.ariane {
+  display: table;
+  background: rgb(200, 200, 200);
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 3px;
+  width: 100%;
+  height: 32px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin-bottom: 1em;
+}
+
+.ariane span.step {
+    display: table-cell;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    background: rgb(200, 200, 200);
+}
+
+.ariane span.step:after {
+    content: "";
+    display: block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    z-index: 2;
+    right: -10px;
+    top: 0;
+    background: rgb(200, 200, 200);
+    transform: rotate(-45deg);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.ariane span.step:last-child:after {
+    display: none;
+}
+
+.ariane span.step.selected {
+    background: white;
+    z-index: 1;
+}
+
+.ariane span.step.selected:after {
+    background: white;
+}
+
+select {
+	margin-bottom: 10px;
+}
+
+.ticket {
+  display: block;
+  background: white;
+  padding: 10px;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.ticket > form {
+    text-align: right;
+}
+
+.ticket p.ticket-name {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  margin-bottom: 10px;
+}
+
+.ticket p.ticket-price {
+  font-weight: bold;
+  text-align: right;
+  padding: 0 35px;
+}
+
+.ticket select {
+  margin-bottom: 10px;
+}
+
+.coupon-box {
+  display: block;
+  background: white;
+  padding: 10px;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.coupon-box label {
+    padding: 10px;
+}
+
+.summarized h2 {
+	margin: 0;
+}
+
+.summarized .option:first-letter {
+    text-transform: uppercase;
+}
+
+div.summarized {
+  display: block;
+  background: white;
+  padding: 10px;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.ticket-desc {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+a.buy {
+    display: block;
+    position: absolute;
+    right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgb(213, 59, 37);
+    color: #ffead7;    background-color: #d53b25;    border-radius: 2px 2px 0 0;    box-shadow: 1px 1px 1px #cacaca;    font-size: 1.2em;
+}
+
+a.buy:hover {
+    background-color: #e34b34;
+    cursor: pointer;
+}
+
+a.buy:active {
+    box-shadow: none;
+    background: #D03D26;
+}
+
+.ticket_final {
+  display: block;
+  margin: 20px 0;
+  background: #F9F9F9;
+  padding: 0;
+  border: 1px solid #cacaca;
+  padding: 20px;
+  text-align: center;
+}
+
+.ticket_final h3 {
+  margin: 0;
+}
+
+body .ticket_final img {
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  border: 1px solid rgb(213, 59, 38);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+input[type="submit"] {
+  margin: 10px 0;
+}
+
+@media print {
+  #nav-bar {
+    display: none;
+  }
+}
+
+span.error {
+  display: block;
+  padding: 2px 5px;
+  background: rgb(255, 210, 210);
+  color: red;
+  margin: 5px 0;
+}
